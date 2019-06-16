@@ -1,6 +1,7 @@
 ﻿using Application.Commands;
 using Application.DTO;
 using Application.Exceptions;
+using Application.Interfaces;
 using Domain;
 using EfDataAccess;
 using System;
@@ -12,8 +13,11 @@ namespace EfCommands
 {
     public class EFCreateCommentCommand : BaseEFCommand, ICreateCommentCommand
     {
-        public EFCreateCommentCommand(GamesContext context) : base(context)
+        private readonly IEmailSender _emailSender;
+        public EFCreateCommentCommand(GamesContext context,IEmailSender s) : base(context)
         {
+            _emailSender = s;
+
         }
 
         public void Execute(CreateCommentDto request)
@@ -42,6 +46,12 @@ namespace EfCommands
             });
 
             _context.SaveChanges();
+
+            var email = _context.Commnets.Where(p => p.UserId == request.UserId).Select(u => u.User.Email).First().ToString();
+            _emailSender.Subject = "Comment posted!";
+            _emailSender.Body = "Your Comment was created! Yey!";
+            _emailSender.ToEmail = email;
+            _emailSender.Send();
         }
     }
 }
