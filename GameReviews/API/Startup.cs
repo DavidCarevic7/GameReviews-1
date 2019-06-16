@@ -19,6 +19,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace API
 {
@@ -61,6 +62,15 @@ namespace API
             services.AddTransient<IDeleteCommentCommand, EFDeleteCommentCommand>();
             services.AddTransient<IAuthorizeCommand, LoginCommand>();
             services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
+
+
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "GamesApi", Version = "v1" });
+            });
+
+
 
             var email = Configuration.GetSection("Email");
             var sender = new SmtpEmailSender(email["host"], Int32.Parse(email["port"]), email["fromAddress"], email["password"]);
@@ -109,6 +119,16 @@ namespace API
 
             app.UseHttpsRedirection();
             app.UseMvc();
+
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
+
         }
     }
 }

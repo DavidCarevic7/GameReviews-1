@@ -38,7 +38,7 @@ namespace API.Controllers
 
         // GET: api/Comments
         [HttpGet]
-        public ActionResult Get([FromQuery] CommentSearch cs)
+        public ActionResult<IEnumerable<CreateCommentDto>> Get([FromQuery] CommentSearch cs)
         {
             try
             {
@@ -57,7 +57,7 @@ namespace API.Controllers
 
         // GET: api/Comments/5
         [HttpGet("{id}")]
-        public ActionResult Get(int id)
+        public ActionResult<CreateCommentDto> Get(int id)
         {
             try
             {

@@ -48,12 +48,16 @@ namespace API.Controllers
 
 
 
-
-
-
+        //ne izbacuje opis
+         
+        /// <summary>
+        /// Rturns all 
+        /// </summary>
+        /// <param name="ps"></param>
+        /// <returns></returns>
         // GET: api/Posts
         [HttpGet]
-        public ActionResult Get([FromQuery]PostSearch ps)
+        public ActionResult<IEnumerable<PostDto>> Get([FromQuery]PostSearch ps)
         {
             try
             {
@@ -66,7 +70,7 @@ namespace API.Controllers
 
         // GET: api/Posts/5
         [HttpGet("{id}")]
-        public ActionResult Get(int id)
+        public ActionResult<GetPostDto> Get(int id)
         {
             try
             {
@@ -85,7 +89,7 @@ namespace API.Controllers
 
         // POST: api/Posts
         [HttpPost]
-        public ActionResult Post([FromForm] PostDto dto)
+        public ActionResult<CreatePostDto> Post([FromForm] PostDto dto)
         {
             var ext = Path.GetExtension(dto.PostImage.FileName);
 

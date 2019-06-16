@@ -35,7 +35,7 @@ namespace API.Controllers
 
         // GET: api/Users
         [HttpGet]
-        public ActionResult Get([FromQuery] UserSearch us)
+        public ActionResult<IEnumerable<GetUserDto>> Get([FromQuery] UserSearch us)
         {
             try
             {
@@ -49,7 +49,7 @@ namespace API.Controllers
 
         // GET: api/Users/5
         [HttpGet("{id}")]
-        public ActionResult Get(int id)
+        public ActionResult<GetUserDto> Get(int id)
         {
             try
             {

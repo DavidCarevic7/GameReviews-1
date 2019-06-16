@@ -11,12 +11,12 @@ namespace API.DTO
     {
         public int Id { get; set; }
 
-        [MinLength(1, ErrorMessage = "Title must be filled"), MaxLength(50, ErrorMessage = "Max lenght is 50")]
+        [MinLength(1, ErrorMessage = "Title must be filled"), MaxLength(50, ErrorMessage = "Max lenght is 50"),Required]
         public string Title { get; set; }
         [Required]
         public string Description { get; set; }
 
-        [RegularExpression(@"^[1-5]{1}$", ErrorMessage = "Ratings are 1 to 5")]
+        [RegularExpression(@"^[1-5]{1}$", ErrorMessage = "Ratings are 1 to 5"),Required]
         public int Rating { get; set; }
 
         public int PostImageId { get; set; }
