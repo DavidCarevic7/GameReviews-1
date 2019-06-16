@@ -109,7 +109,11 @@
         },
         "frameworks": {
           "netcoreapp2.2": {
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\Fax\\Programiranje\\C#\\GameReviews\\Domain\\Domain.csproj": {
+                "projectPath": "E:\\Fax\\Programiranje\\C#\\GameReviews\\Domain\\Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

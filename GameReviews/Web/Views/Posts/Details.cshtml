@@ -1,0 +1,43 @@
+﻿@model Application.DTO.GetOnePostDto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>GetOnePostDto</h4>
+    <hr />
+    <div class="text-center">
+
+        <h3>@Html.DisplayFor(model => model.Title)</h3>
+        <p class="text-info">By:  @Html.DisplayFor(model => model.Email)</p>
+        <img src="~/PostImages/@Html.DisplayFor(model => model.ImageName)" />
+
+
+
+        <p> @Html.DisplayFor(model => model.Description)</p>
+
+
+
+        <p>Rating: @Html.DisplayFor(model => model.Rating)</p>
+
+        <br/>
+        <h4>Comments</h4>
+        @foreach (var c in Model.Comments)
+        {
+            <div class="row">
+                <p class="text-info"> @c.FirstName @c.LastName </p>:&nbsp;<p>@c.Text</p>
+
+            </div>
+            <hr />
+        }
+
+
+    </div>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

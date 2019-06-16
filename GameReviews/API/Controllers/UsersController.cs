@@ -18,9 +18,9 @@ namespace API.Controllers
         public readonly ICreateUserCommand _userCreate;
         public readonly IEditUserCommand _userEdit;
         public readonly IGetUserCommand _userGet;
-        public readonly IGetUsersCommand _usersGet;
+        public readonly IGetUsersPaginatedCommand _usersGet;
 
-        public UsersController(ICreateUserCommand userCreate, IEditUserCommand userEdit, IGetUserCommand userGet, IGetUsersCommand usersGet)
+        public UsersController(ICreateUserCommand userCreate, IEditUserCommand userEdit, IGetUserCommand userGet, IGetUsersPaginatedCommand usersGet)
         {
             _userCreate = userCreate;
             _userEdit = userEdit;
@@ -67,7 +67,7 @@ namespace API.Controllers
         public ActionResult Post([FromBody] CreateUserDto dto)
         {
 
-            try { _userCreate.Execute(dto);return StatusCode(204); }
+            try { _userCreate.Execute(dto);return StatusCode(201); }
             catch (EntityAlreadyExistsException e) { return UnprocessableEntity(e.Message); }
             catch (Exception e) { return StatusCode(500, e.Message); }
         }

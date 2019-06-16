@@ -19,7 +19,7 @@ namespace API.DTO
         [RegularExpression(@"^[1-5]{1}$", ErrorMessage = "Ratings are 1 to 5")]
         public int Rating { get; set; }
 
-        
+        public int PostImageId { get; set; }
         [Required]
         public IFormFile PostImage { get; set; }
         [Required]

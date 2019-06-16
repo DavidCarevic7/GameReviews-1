@@ -35,7 +35,6 @@ namespace EfCommands
 
             return query.Select(r => new GetUserDto
             {
-
                 Email = r.Email,
                 Id = r.Id,
                 FirstName = r.FirstName,
@@ -43,11 +42,7 @@ namespace EfCommands
                 RoleId = r.RoleId,
                 CreatedOn = r.CreatedOn,
                 ModifiedOn = r.ModifiedOn,
-                RoleName=r.Role.RoleName
-
-                
-
-
+                RoleName=r.Role.RoleName             
 
             });
         }

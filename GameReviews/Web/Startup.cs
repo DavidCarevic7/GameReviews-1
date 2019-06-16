@@ -44,6 +44,8 @@ namespace Web
             services.AddTransient<IEditUserCommand, EFEditUserCommand>();
             services.AddTransient<IDeleteUserCommand, EFDeleteUserCommand>();
             services.AddTransient<IGetUserCommand, EFGetUserCommand>();
+            services.AddTransient<IGetPostsCommand, EFGetPostsCommand>();
+            services.AddTransient<IGetPostCommand, EFGetPostCommand>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

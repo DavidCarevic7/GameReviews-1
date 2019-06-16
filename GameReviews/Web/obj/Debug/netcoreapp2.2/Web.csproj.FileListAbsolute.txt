@@ -42,3 +42,5 @@ E:\Fax\Programiranje\C#\GameReviews\Web\obj\Debug\netcoreapp2.2\Razor\Views\User
 E:\Fax\Programiranje\C#\GameReviews\Web\obj\Debug\netcoreapp2.2\Razor\Views\Users\Delete.g.cshtml.cs
 E:\Fax\Programiranje\C#\GameReviews\Web\obj\Debug\netcoreapp2.2\Razor\Views\Users\Details.g.cshtml.cs
 E:\Fax\Programiranje\C#\GameReviews\Web\obj\Debug\netcoreapp2.2\Razor\Views\Users\Index.g.cshtml.cs
+E:\Fax\Programiranje\C#\GameReviews\Web\obj\Debug\netcoreapp2.2\Razor\Views\Posts\Index.g.cshtml.cs
+E:\Fax\Programiranje\C#\GameReviews\Web\obj\Debug\netcoreapp2.2\Razor\Views\Posts\Details.g.cshtml.cs

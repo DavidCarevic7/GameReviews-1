@@ -129,14 +129,19 @@ namespace Web.Controllers
             {
                 // TODO: Add delete logic here
 
-                 _deleteUser.Execute(id);
+
+                _deleteUser.Execute(id);
 
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (EntityNotFoundException e)
             {
-                return View();
+                TempData["Errors"] = e.Message;
+
             }
+            catch (Exception e) { TempData["Errors"] = e.Message; }
+
+            return View();
         }
     }
 }
