@@ -1,0 +1,9 @@
+E:\Fax\Programiranje\C#\GameReviews\Domain\bin\Debug\netcoreapp2.2\Domain.deps.json
+E:\Fax\Programiranje\C#\GameReviews\Domain\bin\Debug\netcoreapp2.2\Domain.dll
+E:\Fax\Programiranje\C#\GameReviews\Domain\bin\Debug\netcoreapp2.2\Domain.pdb
+E:\Fax\Programiranje\C#\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.csproj.CoreCompileInputs.cache
+E:\Fax\Programiranje\C#\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfoInputs.cache
+E:\Fax\Programiranje\C#\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfo.cs
+E:\Fax\Programiranje\C#\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.dll
+E:\Fax\Programiranje\C#\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.pdb
+E:\Fax\Programiranje\C#\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.csprojAssemblyReference.cache

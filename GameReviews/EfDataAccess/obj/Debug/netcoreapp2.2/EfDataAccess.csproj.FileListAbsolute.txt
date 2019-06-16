@@ -1,0 +1,14 @@
+E:\Fax\Programiranje\C#\GameReviews\EfDataAccess\bin\Debug\netcoreapp2.2\EfDataAccess.deps.json
+E:\Fax\Programiranje\C#\GameReviews\EfDataAccess\bin\Debug\netcoreapp2.2\EfDataAccess.dll
+E:\Fax\Programiranje\C#\GameReviews\EfDataAccess\obj\Debug\netcoreapp2.2\EfDataAccess.csprojAssemblyReference.cache
+E:\Fax\Programiranje\C#\GameReviews\EfDataAccess\obj\Debug\netcoreapp2.2\EfDataAccess.csproj.CoreCompileInputs.cache
+E:\Fax\Programiranje\C#\GameReviews\EfDataAccess\obj\Debug\netcoreapp2.2\EfDataAccess.AssemblyInfoInputs.cache
+E:\Fax\Programiranje\C#\GameReviews\EfDataAccess\obj\Debug\netcoreapp2.2\EfDataAccess.AssemblyInfo.cs
+E:\Fax\Programiranje\C#\GameReviews\EfDataAccess\bin\Debug\netcoreapp2.2\EfDataAccess.runtimeconfig.json
+E:\Fax\Programiranje\C#\GameReviews\EfDataAccess\bin\Debug\netcoreapp2.2\EfDataAccess.runtimeconfig.dev.json
+E:\Fax\Programiranje\C#\GameReviews\EfDataAccess\bin\Debug\netcoreapp2.2\EfDataAccess.pdb
+E:\Fax\Programiranje\C#\GameReviews\EfDataAccess\bin\Debug\netcoreapp2.2\Domain.dll
+E:\Fax\Programiranje\C#\GameReviews\EfDataAccess\bin\Debug\netcoreapp2.2\Domain.pdb
+E:\Fax\Programiranje\C#\GameReviews\EfDataAccess\obj\Debug\netcoreapp2.2\EfDataAccess.csproj.CopyComplete
+E:\Fax\Programiranje\C#\GameReviews\EfDataAccess\obj\Debug\netcoreapp2.2\EfDataAccess.dll
+E:\Fax\Programiranje\C#\GameReviews\EfDataAccess\obj\Debug\netcoreapp2.2\EfDataAccess.pdb

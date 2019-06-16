@@ -1,0 +1,16 @@
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csprojAssemblyReference.cache
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csproj.CoreCompileInputs.cache
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.AssemblyInfoInputs.cache
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.AssemblyInfo.cs
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.deps.json
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.dll
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.pdb
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\bin\Debug\netcoreapp2.2\Application.dll
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\bin\Debug\netcoreapp2.2\Domain.dll
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\bin\Debug\netcoreapp2.2\EfDataAccess.dll
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\bin\Debug\netcoreapp2.2\Application.pdb
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\bin\Debug\netcoreapp2.2\Domain.pdb
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\bin\Debug\netcoreapp2.2\EfDataAccess.pdb
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csproj.CopyComplete
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.dll
+E:\Fax\Programiranje\C#\GameReviews\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.pdb
