@@ -70,10 +70,7 @@ namespace Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([FromForm] CreateUserDto dto)
         {
-            var user = new CreateUserDto
-            {
-
-            };
+            
 
             try { _createUser.Execute(dto); 
 

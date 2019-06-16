@@ -19,18 +19,16 @@ namespace API.Controllers
         public readonly IEditUserCommand _userEdit;
         public readonly IGetUserCommand _userGet;
         public readonly IGetUsersPaginatedCommand _usersGet;
+        public readonly IDeleteUserCommand _deleteUser;
 
-        public UsersController(ICreateUserCommand userCreate, IEditUserCommand userEdit, IGetUserCommand userGet, IGetUsersPaginatedCommand usersGet)
+        public UsersController(ICreateUserCommand userCreate, IEditUserCommand userEdit, IGetUserCommand userGet, IGetUsersPaginatedCommand usersGet, IDeleteUserCommand deleteUser)
         {
             _userCreate = userCreate;
             _userEdit = userEdit;
             _userGet = userGet;
             _usersGet = usersGet;
+            _deleteUser = deleteUser;
         }
-
-
-
-
 
 
 
@@ -89,8 +87,21 @@ namespace API.Controllers
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult Delete(int id)
         {
+            try
+            {
+                _deleteUser.Execute(id);
+                return StatusCode(204);
+            }
+            catch (EntityNotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
     }
 }

@@ -30,7 +30,7 @@ namespace EfCommands
             post.Title = request.Title;
             post.Rating = request.Rating;
             post.ModifiedOn = DateTime.Now;
-            post.UserId = request.UserId;
+            
             
 
 

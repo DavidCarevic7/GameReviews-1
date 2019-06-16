@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 using Application.Commands;
 using Application.DTO;
 using Application.Exceptions;
+using Application.Searches;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+
 
 namespace API.Controllers
 {
@@ -16,25 +18,62 @@ namespace API.Controllers
     {
 
         private readonly ICreateCommentCommand _createComment;
+        private readonly IGetCommentsCommand _getAll;
+        private readonly IGetCommentCommand _getOne;
+        private readonly IEditCommentCommand _editComment;
+        private readonly IDeleteCommentCommand _deleteComment;
 
-        public CommentsController(ICreateCommentCommand createComment)
+        public CommentsController(ICreateCommentCommand createComment, IGetCommentsCommand getAll, IGetCommentCommand getOne, IEditCommentCommand editComment, IDeleteCommentCommand deleteComment)
         {
             _createComment = createComment;
+            _getAll = getAll;
+            _getOne = getOne;
+            _editComment = editComment;
+            _deleteComment = deleteComment;
         }
+
+
+
+
 
         // GET: api/Comments
         [HttpGet]
-        public IEnumerable<string> Get()
+        public ActionResult Get([FromQuery] CommentSearch cs)
         {
-            return new string[] { "value1", "value2" };
+            try
+            {
+                var comments = _getAll.Execute(cs);
+                return Ok(comments);
+            }
+            catch(EntityNotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch(Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
 
         // GET: api/Comments/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        [HttpGet("{id}")]
+        public ActionResult Get(int id)
         {
-            return "value";
-        }
+            try
+            {
+                var comment = _getOne.Execute(id);
+                return Ok(comment);
+            }
+            catch (EntityNotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
+        }        
+        
 
         // POST: api/Comments
         [HttpPost]
@@ -51,14 +90,36 @@ namespace API.Controllers
 
         // PUT: api/Comments/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public ActionResult Put(int id, [FromBody] EditCommentDto dto)
         {
+            dto.Id = id;
+            try
+            {
+                _editComment.Execute(dto);
+                return StatusCode(204);
+            }
+            catch (EntityNotFoundException e) { return NotFound(e.Message); }
+
+            catch (Exception e) { return StatusCode(500, e.Message); }
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult Delete(int id)
         {
+            try
+            {
+                _deleteComment.Execute(id);
+                return StatusCode(204);
+            }
+            catch(EntityNotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch(Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
     }
 }

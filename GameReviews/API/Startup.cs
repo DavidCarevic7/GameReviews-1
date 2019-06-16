@@ -47,6 +47,12 @@ namespace API
             services.AddTransient<IEditPostCommand, EfEditPostCommand>();
             services.AddTransient<IGetImageCommand, EFGetPostImageCommand>();
             services.AddTransient<IEditPostPictureCommand, EFEditPostImageCommand>();
+            services.AddTransient<IDeletePostCommand, EFDeletePostCommand>();
+            services.AddTransient<IDeleteUserCommand, EFDeleteUserCommand>();
+            services.AddTransient<IGetCommentsCommand, EFGetCommentsCommand>();
+            services.AddTransient<IGetCommentCommand, EFGetCommentCommand>();
+            services.AddTransient<IEditCommentCommand, EFEditCommentCommand>();
+            services.AddTransient<IDeleteCommentCommand, EFDeleteCommentCommand>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

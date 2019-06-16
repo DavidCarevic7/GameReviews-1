@@ -28,8 +28,9 @@ namespace API.Controllers
         private readonly IEditPostCommand _editPost;
         private readonly IGetImageCommand _getImage;
         private readonly IEditPostPictureCommand _editImage;
+        private readonly IDeletePostCommand _deletePost;
 
-        public PostsController(ICreatePostCommand postCreate, ICreateImageCommand image, IGetPostsPaginatedCommand getPosts, IGetPostCommand getOne, IEditPostCommand editPost, IGetImageCommand getImage, IEditPostPictureCommand editImage)
+        public PostsController(ICreatePostCommand postCreate, ICreateImageCommand image, IGetPostsPaginatedCommand getPosts, IGetPostCommand getOne, IEditPostCommand editPost, IGetImageCommand getImage, IEditPostPictureCommand editImage, IDeletePostCommand deletePost)
         {
             _postCreate = postCreate;
             _image = image;
@@ -38,7 +39,9 @@ namespace API.Controllers
             _editPost = editPost;
             _getImage = getImage;
             _editImage = editImage;
+            _deletePost = deletePost;
         }
+
 
 
 
@@ -199,8 +202,21 @@ namespace API.Controllers
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult Delete(int id)
         {
+            try
+            {
+                _deletePost.Execute(id);
+                return StatusCode(204);
+            }
+            catch (EntityNotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
     }
 }

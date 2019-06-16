@@ -46,6 +46,12 @@ namespace Web
             services.AddTransient<IGetUserCommand, EFGetUserCommand>();
             services.AddTransient<IGetPostsCommand, EFGetPostsCommand>();
             services.AddTransient<IGetPostCommand, EFGetPostCommand>();
+            services.AddTransient<ICreatePostCommand, EFCreatePostCommand>();
+            services.AddTransient<ICreateImageCommand, EFCreatePostImageCommand>();
+            services.AddTransient<IEditPostCommand, EfEditPostCommand>();
+            services.AddTransient<IEditPostPictureCommand, EFEditPostImageCommand>();
+            services.AddTransient<IGetImageCommand, EFGetPostImageCommand>();
+            services.AddTransient<IDeletePostCommand, EFDeletePostCommand>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
