@@ -1615,6 +1615,7 @@
       "path": "microsoft.netcore.targets/2.0.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
@@ -3654,21 +3655,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\David\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\David\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Fax\\Programiranje\\C#\\GameReviews\\Console\\Console.csproj",
+      "projectUniqueName": "F:\\Programiranje\\GameReviews\\GameReviews\\Console\\Console.csproj",
       "projectName": "Console",
-      "projectPath": "E:\\Fax\\Programiranje\\C#\\GameReviews\\Console\\Console.csproj",
+      "projectPath": "F:\\Programiranje\\GameReviews\\GameReviews\\Console\\Console.csproj",
       "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-      "outputPath": "E:\\Fax\\Programiranje\\C#\\GameReviews\\Console\\obj\\",
+      "outputPath": "F:\\Programiranje\\GameReviews\\GameReviews\\Console\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -3683,17 +3680,17 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "E:\\Fax\\Programiranje\\C#\\GameReviews\\Application\\Application.csproj": {
-              "projectPath": "E:\\Fax\\Programiranje\\C#\\GameReviews\\Application\\Application.csproj"
+            "F:\\Programiranje\\GameReviews\\GameReviews\\Application\\Application.csproj": {
+              "projectPath": "F:\\Programiranje\\GameReviews\\GameReviews\\Application\\Application.csproj"
             },
-            "E:\\Fax\\Programiranje\\C#\\GameReviews\\Domain\\Domain.csproj": {
-              "projectPath": "E:\\Fax\\Programiranje\\C#\\GameReviews\\Domain\\Domain.csproj"
+            "F:\\Programiranje\\GameReviews\\GameReviews\\Domain\\Domain.csproj": {
+              "projectPath": "F:\\Programiranje\\GameReviews\\GameReviews\\Domain\\Domain.csproj"
             },
-            "E:\\Fax\\Programiranje\\C#\\GameReviews\\EfCommands\\EfCommands.csproj": {
-              "projectPath": "E:\\Fax\\Programiranje\\C#\\GameReviews\\EfCommands\\EfCommands.csproj"
+            "F:\\Programiranje\\GameReviews\\GameReviews\\EfCommands\\EfCommands.csproj": {
+              "projectPath": "F:\\Programiranje\\GameReviews\\GameReviews\\EfCommands\\EfCommands.csproj"
             },
-            "E:\\Fax\\Programiranje\\C#\\GameReviews\\EfDataAccess\\EfDataAccess.csproj": {
-              "projectPath": "E:\\Fax\\Programiranje\\C#\\GameReviews\\EfDataAccess\\EfDataAccess.csproj"
+            "F:\\Programiranje\\GameReviews\\GameReviews\\EfDataAccess\\EfDataAccess.csproj": {
+              "projectPath": "F:\\Programiranje\\GameReviews\\GameReviews\\EfDataAccess\\EfDataAccess.csproj"
             }
           }
         }
@@ -3715,10 +3712,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

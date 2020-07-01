@@ -1,0 +1,9 @@
+F:\Programiranje\GameReviews\GameReviews\Domain\bin\Debug\netcoreapp2.1\Domain.deps.json
+F:\Programiranje\GameReviews\GameReviews\Domain\bin\Debug\netcoreapp2.1\Domain.dll
+F:\Programiranje\GameReviews\GameReviews\Domain\bin\Debug\netcoreapp2.1\Domain.pdb
+F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.1\Domain.csprojAssemblyReference.cache
+F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.1\Domain.csproj.CoreCompileInputs.cache
+F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfoInputs.cache
+F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfo.cs
+F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.1\Domain.dll
+F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.1\Domain.pdb

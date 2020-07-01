@@ -17,58 +17,28 @@ namespace API.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly Encryption _enc;
-        private readonly IAuthorizeCommand _command;
+       
+        private readonly JwtManager manager;
 
-        public AuthController(Encryption enc, IAuthorizeCommand command)
+        public AuthController(JwtManager manager)
         {
-            _enc = enc;
-            _command = command;
+            this.manager = manager;
         }
 
 
-
+        
         // POST: api/Auth
         [HttpPost]
         public ActionResult Post([FromBody]LoginDto login)
         {
-            try
-            {
-
-                var logged = _command.Execute(login);
-
-                var user = new LoggedUser
+            return Ok(
+                new
                 {
-                    FirstName = logged.FirstName,
-                    LastName = logged.LastName,
-                    Id = logged.Id,
-                    Role = logged.RoleName,
-                    Email=logged.Email
-                };
-
-                var stringObjekat = JsonConvert.SerializeObject(user);
-
-                var encrypted = _enc.EncryptString(stringObjekat);
-
-                return Ok(new { token = encrypted });
-            }
-            catch (EntityNotFoundException e)
-            {
-                return NotFound(e.Message);
-            }
-            catch (Exception)
-            {
-                return StatusCode(500, "An error occured. Try again later");
-            }
-
+                    token = manager.MakeToken(login.Email, login.Password)
+                }
+                ); ;
         }
-        [HttpGet("decode")]
-        public ActionResult Decode(string value)
-        {
-            var decoded = _enc.DecryptString(value);
-            decoded = decoded.Substring(0, decoded.LastIndexOf("}") + 1);
-            var user = JsonConvert.DeserializeObject<LoggedUser>(decoded);
-            return null;
-        }
+            
+        
     }
 }

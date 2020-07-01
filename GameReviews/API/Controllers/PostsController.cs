@@ -9,6 +9,7 @@ using Application.DTO;
 using Application.Exceptions;
 using Application.Help;
 using Application.Searches;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -57,6 +58,7 @@ namespace API.Controllers
         /// <returns></returns>
         // GET: api/Posts
         [HttpGet]
+        [Authorize]
         public ActionResult<IEnumerable<PostDto>> Get([FromQuery]PostSearch ps)
         {
             try

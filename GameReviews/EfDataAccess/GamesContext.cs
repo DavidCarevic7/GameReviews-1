@@ -21,7 +21,7 @@ namespace EfDataAccess
         public DbSet<Comment> Commnets { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            optionsBuilder.UseSqlServer(@"Data Source =.\SQLEXPRESS; Initial Catalog = Games; Integrated Security = True");
+            optionsBuilder.UseSqlServer(@"Data Source=.\SQLEXPRESS;Initial Catalog=games;Integrated Security=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

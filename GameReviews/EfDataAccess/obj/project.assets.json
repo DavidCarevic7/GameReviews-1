@@ -1607,6 +1607,7 @@
       "path": "microsoft.netcore.targets/2.0.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
@@ -3638,11 +3639,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Fax\\Programiranje\\C#\\GameReviews\\EfDataAccess\\EfDataAccess.csproj",
+      "projectUniqueName": "F:\\Programiranje\\GameReviews\\GameReviews\\EfDataAccess\\EfDataAccess.csproj",
       "projectName": "EfDataAccess",
-      "projectPath": "E:\\Fax\\Programiranje\\C#\\GameReviews\\EfDataAccess\\EfDataAccess.csproj",
+      "projectPath": "F:\\Programiranje\\GameReviews\\GameReviews\\EfDataAccess\\EfDataAccess.csproj",
       "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-      "outputPath": "E:\\Fax\\Programiranje\\C#\\GameReviews\\EfDataAccess\\obj\\",
+      "outputPath": "F:\\Programiranje\\GameReviews\\GameReviews\\EfDataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3661,8 +3662,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "E:\\Fax\\Programiranje\\C#\\GameReviews\\Domain\\Domain.csproj": {
-              "projectPath": "E:\\Fax\\Programiranje\\C#\\GameReviews\\Domain\\Domain.csproj"
+            "F:\\Programiranje\\GameReviews\\GameReviews\\Domain\\Domain.csproj": {
+              "projectPath": "F:\\Programiranje\\GameReviews\\GameReviews\\Domain\\Domain.csproj"
             }
           }
         }
@@ -3702,10 +3703,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,16 @@
+F:\Programiranje\GameReviews\GameReviews\EfCommands\bin\Debug\netcoreapp2.1\EfCommands.deps.json
+F:\Programiranje\GameReviews\GameReviews\EfCommands\bin\Debug\netcoreapp2.1\EfCommands.dll
+F:\Programiranje\GameReviews\GameReviews\EfCommands\bin\Debug\netcoreapp2.1\EfCommands.pdb
+F:\Programiranje\GameReviews\GameReviews\EfCommands\bin\Debug\netcoreapp2.1\Application.dll
+F:\Programiranje\GameReviews\GameReviews\EfCommands\bin\Debug\netcoreapp2.1\Domain.dll
+F:\Programiranje\GameReviews\GameReviews\EfCommands\bin\Debug\netcoreapp2.1\EfDataAccess.dll
+F:\Programiranje\GameReviews\GameReviews\EfCommands\bin\Debug\netcoreapp2.1\Application.pdb
+F:\Programiranje\GameReviews\GameReviews\EfCommands\bin\Debug\netcoreapp2.1\Domain.pdb
+F:\Programiranje\GameReviews\GameReviews\EfCommands\bin\Debug\netcoreapp2.1\EfDataAccess.pdb
+F:\Programiranje\GameReviews\GameReviews\EfCommands\obj\Debug\netcoreapp2.1\EfCommands.csprojAssemblyReference.cache
+F:\Programiranje\GameReviews\GameReviews\EfCommands\obj\Debug\netcoreapp2.1\EfCommands.csproj.CoreCompileInputs.cache
+F:\Programiranje\GameReviews\GameReviews\EfCommands\obj\Debug\netcoreapp2.1\EfCommands.AssemblyInfoInputs.cache
+F:\Programiranje\GameReviews\GameReviews\EfCommands\obj\Debug\netcoreapp2.1\EfCommands.AssemblyInfo.cs
+F:\Programiranje\GameReviews\GameReviews\EfCommands\obj\Debug\netcoreapp2.1\EfCommands.csproj.CopyComplete
+F:\Programiranje\GameReviews\GameReviews\EfCommands\obj\Debug\netcoreapp2.1\EfCommands.dll
+F:\Programiranje\GameReviews\GameReviews\EfCommands\obj\Debug\netcoreapp2.1\EfCommands.pdb

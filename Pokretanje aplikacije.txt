@@ -1,0 +1,6 @@
+2.2.0 SDK 
+https://dotnet.microsoft.com/download/dotnet-core/2.2
+
+Migracija koja je napravljena resava On delete i update za comments
+
+Posle toga samo pokrenuti konzolu

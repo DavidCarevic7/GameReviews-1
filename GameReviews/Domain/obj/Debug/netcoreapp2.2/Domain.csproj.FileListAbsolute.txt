@@ -6,3 +6,12 @@ E:\Fax\Programiranje\C#\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.Assemb
 E:\Fax\Programiranje\C#\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfo.cs
 E:\Fax\Programiranje\C#\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.dll
 E:\Fax\Programiranje\C#\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.pdb
+F:\Programiranje\GameReviews\GameReviews\Domain\bin\Debug\netcoreapp2.2\Domain.deps.json
+F:\Programiranje\GameReviews\GameReviews\Domain\bin\Debug\netcoreapp2.2\Domain.dll
+F:\Programiranje\GameReviews\GameReviews\Domain\bin\Debug\netcoreapp2.2\Domain.pdb
+F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.csprojAssemblyReference.cache
+F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.csproj.CoreCompileInputs.cache
+F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfoInputs.cache
+F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfo.cs
+F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.dll
+F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.pdb

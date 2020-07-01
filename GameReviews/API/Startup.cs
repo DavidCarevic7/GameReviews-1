@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using API.Email;
 using API.Helpers;
@@ -9,6 +10,7 @@ using Application.Help;
 using Application.Interfaces;
 using EfCommands;
 using EfDataAccess;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -18,6 +20,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -62,6 +65,48 @@ namespace API
             services.AddTransient<IDeleteCommentCommand, EFDeleteCommentCommand>();
             services.AddTransient<IAuthorizeCommand, LoginCommand>();
             services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddTransient<IApplicationActor>(x=>
+            {
+                var accessor = x.GetService<IHttpContextAccessor>();
+                
+
+                var user = accessor.HttpContext.User;
+
+                if (user.FindFirst("Role") == null)
+                {
+                    throw new InvalidOperationException("Role does not exist.");
+                }
+
+                var actorString = user.FindFirst("Role").Value;
+
+                var role = JsonConvert.DeserializeObject<JwtActor>(actorString);
+
+                return role;
+            }
+                );
+            services.AddTransient<JwtManager>();
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultSignInScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(cfg =>
+            {
+                cfg.RequireHttpsMetadata = false;
+                cfg.SaveToken = true;
+                cfg.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidIssuer = "asp_api",
+                    ValidateIssuer = true,
+                    ValidAudience = "Any",
+                    ValidateAudience = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ThisIsMyVerySecretKey")),
+                    ValidateIssuerSigningKey = true,
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero
+                };
+            });
 
 
 
@@ -119,7 +164,7 @@ namespace API
 
             app.UseHttpsRedirection();
             app.UseMvc();
-
+            app.UseAuthentication();
             app.UseSwagger();
 
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
