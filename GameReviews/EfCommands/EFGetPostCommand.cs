@@ -18,7 +18,13 @@ namespace EfCommands
 
         public GetOnePostDto Execute(int request)
         {
-            var post = _context.Posts.Where(p=>p.Id==request && p.IsDeleted==false).Include(p=>p.PostImage).Include(p => p.User).Include(p => p.Comments).ThenInclude(c => c.User).First();
+            var post = _context.Posts
+                .Where(p=>p.Id==request && p.IsDeleted==false)
+                .Include(p => p.PostTags).ThenInclude(p=>p.Tag)
+                .Include(p=>p.PostImage)
+                .Include(p => p.User)
+                .Include(p => p.Comments)
+                .ThenInclude(c => c.User).First();
 
             if (post == null)
                 throw new EntityNotFoundException();
@@ -37,7 +43,13 @@ namespace EfCommands
                     FirstName=c.User.FirstName,
                     LastName=c.User.LastName
                     
+                }).ToList(),
+
+                Tags=post.PostTags.Select(c=> new GetTagsDto { 
+                    Name=c.Tag.Name
                 }).ToList()
+
+                
             };
             
         }

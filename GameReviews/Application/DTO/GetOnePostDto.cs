@@ -20,5 +20,7 @@ namespace Application.DTO
         public string ImageName { get; set; }
 
         public IEnumerable<GetCommentDto> Comments {get;set;}
+
+        public IEnumerable<GetTagsDto> Tags { get; set; }
     }
 }

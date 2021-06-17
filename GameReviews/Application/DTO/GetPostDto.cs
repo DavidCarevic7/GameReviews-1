@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.DTO
 {
-   public  class GetPostDto
+    public class GetPostDto
     {
         public int Id { get; set; }
         public string Title { get; set; }
@@ -18,6 +18,8 @@ namespace Application.DTO
         public int UserId { get; set; }
 
         public string ImageName { get; set; }
+
+      
 
         
 
