@@ -2,10 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\GameReviews",
-    "\\GameReviews\\API",
-    "\\GameReviews\\API\\DTO",
-    "\\GameReviews\\API\\Email",
-    "\\GameReviews\\API\\Helpers"
+    "\\GameReviews\\API\\Helpers",
+    "\\GameReviews\\EfDataAccess",
+    "\\GameReviews\\EfDataAccess\\bin",
+    "\\GameReviews\\EfDataAccess\\Configurations",
+    "\\GameReviews\\EfDataAccess\\Migrations",
+    "\\GameReviews\\EfDataAccess\\obj",
+    "\\GameReviews\\Web\\Controllers",
+    "\\GameReviews\\Web\\DTO"
   ],
   "SelectedNode": "\\GameReviews\\GameReviews.sln",
   "PreviewInSolutionExplorer": false

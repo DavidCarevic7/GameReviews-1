@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Pr6M44Jjpsa0KqUlzES2V7H2PGC24F/4rsdMiUHEF5FTs9UrBDPOqn83bXDaY0CtD+s5gGjJ9uqJn7yYx+USSg==",
+  "dgSpecHash": "KMyIbaE3clpFoOfL3yxvy5KWtQuAuGWoKnNiAOIsh47keFsqn7uHvP42zDDglrDvp83eIxjvpetteMaA9snNYw==",
   "success": true,
-  "projectFilePath": "F:\\Programiranje\\GameReviews\\GameReviews\\Console\\Console.csproj",
+  "projectFilePath": "D:\\Programiranje\\GameReviews\\GameReviews\\Console\\Console.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\David\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\David\\.nuget\\packages\\microsoft.entityframeworkcore\\2.2.4\\microsoft.entityframeworkcore.2.2.4.nupkg.sha512",

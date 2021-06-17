@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DFFB+qy1XGTFXyz4P7BTN2s8KOzGYl6hThbOZYv6dzTmDuYNN/i1HjuTE7nHLDaOaRCt/A68nS1wisjOSqObsw==",
+  "dgSpecHash": "cYDD5jJhfmQeeWEtCsHY4DuIY5czIjKBYfNlGVo8VpHPJsKFWBqXasSMNP24a0bexUe52oq2wL6AJi2ha7Y0dw==",
   "success": true,
-  "projectFilePath": "F:\\Programiranje\\GameReviews\\GameReviews\\EfDataAccess\\EfDataAccess.csproj",
+  "projectFilePath": "D:\\Programiranje\\GameReviews\\GameReviews\\EfDataAccess\\EfDataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\David\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\David\\.nuget\\packages\\microsoft.entityframeworkcore\\2.2.4\\microsoft.entityframeworkcore.2.2.4.nupkg.sha512",

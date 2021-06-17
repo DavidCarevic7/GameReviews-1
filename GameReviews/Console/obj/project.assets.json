@@ -3655,17 +3655,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\David\\.nuget\\packages\\": {}
+    "C:\\Users\\David\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Programiranje\\GameReviews\\GameReviews\\Console\\Console.csproj",
+      "projectUniqueName": "D:\\Programiranje\\GameReviews\\GameReviews\\Console\\Console.csproj",
       "projectName": "Console",
-      "projectPath": "F:\\Programiranje\\GameReviews\\GameReviews\\Console\\Console.csproj",
+      "projectPath": "D:\\Programiranje\\GameReviews\\GameReviews\\Console\\Console.csproj",
       "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-      "outputPath": "F:\\Programiranje\\GameReviews\\GameReviews\\Console\\obj\\",
+      "outputPath": "D:\\Programiranje\\GameReviews\\GameReviews\\Console\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -3679,18 +3683,19 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
           "projectReferences": {
-            "F:\\Programiranje\\GameReviews\\GameReviews\\Application\\Application.csproj": {
-              "projectPath": "F:\\Programiranje\\GameReviews\\GameReviews\\Application\\Application.csproj"
+            "D:\\Programiranje\\GameReviews\\GameReviews\\Application\\Application.csproj": {
+              "projectPath": "D:\\Programiranje\\GameReviews\\GameReviews\\Application\\Application.csproj"
             },
-            "F:\\Programiranje\\GameReviews\\GameReviews\\Domain\\Domain.csproj": {
-              "projectPath": "F:\\Programiranje\\GameReviews\\GameReviews\\Domain\\Domain.csproj"
+            "D:\\Programiranje\\GameReviews\\GameReviews\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\Programiranje\\GameReviews\\GameReviews\\Domain\\Domain.csproj"
             },
-            "F:\\Programiranje\\GameReviews\\GameReviews\\EfCommands\\EfCommands.csproj": {
-              "projectPath": "F:\\Programiranje\\GameReviews\\GameReviews\\EfCommands\\EfCommands.csproj"
+            "D:\\Programiranje\\GameReviews\\GameReviews\\EfCommands\\EfCommands.csproj": {
+              "projectPath": "D:\\Programiranje\\GameReviews\\GameReviews\\EfCommands\\EfCommands.csproj"
             },
-            "F:\\Programiranje\\GameReviews\\GameReviews\\EfDataAccess\\EfDataAccess.csproj": {
-              "projectPath": "F:\\Programiranje\\GameReviews\\GameReviews\\EfDataAccess\\EfDataAccess.csproj"
+            "D:\\Programiranje\\GameReviews\\GameReviews\\EfDataAccess\\EfDataAccess.csproj": {
+              "projectPath": "D:\\Programiranje\\GameReviews\\GameReviews\\EfDataAccess\\EfDataAccess.csproj"
             }
           }
         }
@@ -3703,6 +3708,7 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
+        "targetAlias": "netcoreapp2.2",
         "dependencies": {
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
@@ -3721,7 +3727,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -32,6 +32,8 @@ namespace EfDataAccess
             modelBuilder.ApplyConfiguration(new PostImageConfiguration());
             modelBuilder.ApplyConfiguration(new CommentConfiguration());
 
+
+
         }
 
 

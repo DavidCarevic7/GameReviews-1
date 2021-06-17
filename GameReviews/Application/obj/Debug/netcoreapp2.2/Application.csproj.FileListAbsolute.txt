@@ -22,3 +22,15 @@ F:\Programiranje\GameReviews\GameReviews\Application\obj\Debug\netcoreapp2.2\App
 F:\Programiranje\GameReviews\GameReviews\Application\obj\Debug\netcoreapp2.2\Application.csproj.CopyComplete
 F:\Programiranje\GameReviews\GameReviews\Application\obj\Debug\netcoreapp2.2\Application.dll
 F:\Programiranje\GameReviews\GameReviews\Application\obj\Debug\netcoreapp2.2\Application.pdb
+D:\Programiranje\GameReviews\GameReviews\Application\bin\Debug\netcoreapp2.2\Application.deps.json
+D:\Programiranje\GameReviews\GameReviews\Application\bin\Debug\netcoreapp2.2\Application.dll
+D:\Programiranje\GameReviews\GameReviews\Application\bin\Debug\netcoreapp2.2\Application.pdb
+D:\Programiranje\GameReviews\GameReviews\Application\bin\Debug\netcoreapp2.2\Domain.dll
+D:\Programiranje\GameReviews\GameReviews\Application\bin\Debug\netcoreapp2.2\Domain.pdb
+D:\Programiranje\GameReviews\GameReviews\Application\obj\Debug\netcoreapp2.2\Application.csproj.AssemblyReference.cache
+D:\Programiranje\GameReviews\GameReviews\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfoInputs.cache
+D:\Programiranje\GameReviews\GameReviews\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfo.cs
+D:\Programiranje\GameReviews\GameReviews\Application\obj\Debug\netcoreapp2.2\Application.csproj.CoreCompileInputs.cache
+D:\Programiranje\GameReviews\GameReviews\Application\obj\Debug\netcoreapp2.2\Application.csproj.CopyComplete
+D:\Programiranje\GameReviews\GameReviews\Application\obj\Debug\netcoreapp2.2\Application.dll
+D:\Programiranje\GameReviews\GameReviews\Application\obj\Debug\netcoreapp2.2\Application.pdb

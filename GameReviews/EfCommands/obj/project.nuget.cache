@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R+b6QrvBd7+9386uRJD3Cl0wxb+7a8zfnE37Ry1dvPHKeS/NHKJHjK/7vEWdbVZKCWRjinbRsj6B11U1WpGFTg==",
+  "dgSpecHash": "SV4qqUMKpwlIgshBFzhZSloXdWfy7+YkIDx7KE7S2bnMdo/nL0lC6H+/coOQ5YZZJqEOKkbaohMUMeelcaxVxg==",
   "success": true,
-  "projectFilePath": "F:\\Programiranje\\GameReviews\\GameReviews\\EfCommands\\EfCommands.csproj",
+  "projectFilePath": "D:\\Programiranje\\GameReviews\\GameReviews\\EfCommands\\EfCommands.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\David\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\David\\.nuget\\packages\\microsoft.entityframeworkcore\\2.2.4\\microsoft.entityframeworkcore.2.2.4.nupkg.sha512",

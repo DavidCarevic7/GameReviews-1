@@ -15,3 +15,12 @@ F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.A
 F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfo.cs
 F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.dll
 F:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.pdb
+D:\Programiranje\GameReviews\GameReviews\Domain\bin\Debug\netcoreapp2.2\Domain.deps.json
+D:\Programiranje\GameReviews\GameReviews\Domain\bin\Debug\netcoreapp2.2\Domain.dll
+D:\Programiranje\GameReviews\GameReviews\Domain\bin\Debug\netcoreapp2.2\Domain.pdb
+D:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.csproj.AssemblyReference.cache
+D:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfoInputs.cache
+D:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfo.cs
+D:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.csproj.CoreCompileInputs.cache
+D:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.dll
+D:\Programiranje\GameReviews\GameReviews\Domain\obj\Debug\netcoreapp2.2\Domain.pdb

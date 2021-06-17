@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FsiouHTtlhITFQO/FpAWNLCFTRn4917ovtuCFnc/VXXwkIr5kHTZSsYjuB15UCJjp5C3eHMx6rZFsegncjumog==",
+  "dgSpecHash": "WGbhpgj7Mw+NMcI5iguUywInUO9IVgmDTNwpgizf4/3rcbUOx9Tr4jYri/EsCnVBGIMg0PEF+S8U59AHa4iNlQ==",
   "success": true,
-  "projectFilePath": "F:\\Programiranje\\GameReviews\\GameReviews\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\Programiranje\\GameReviews\\GameReviews\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\David\\.nuget\\packages\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
     "C:\\Users\\David\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",

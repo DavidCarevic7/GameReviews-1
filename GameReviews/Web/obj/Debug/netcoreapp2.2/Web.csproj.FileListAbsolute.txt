@@ -100,3 +100,11 @@ F:\Programiranje\GameReviews\GameReviews\Web\obj\Debug\netcoreapp2.2\Web.dll
 F:\Programiranje\GameReviews\GameReviews\Web\obj\Debug\netcoreapp2.2\Web.pdb
 F:\Programiranje\GameReviews\GameReviews\Web\obj\Debug\netcoreapp2.2\Web.genruntimeconfig.cache
 F:\Programiranje\GameReviews\GameReviews\Web\obj\Debug\netcoreapp2.2\Web.csproj.CoreCompileInputs.cache
+D:\Programiranje\GameReviews\GameReviews\Web\obj\Debug\netcoreapp2.2\Web.csproj.AssemblyReference.cache
+D:\Programiranje\GameReviews\GameReviews\Web\obj\Debug\netcoreapp2.2\Web.AssemblyInfoInputs.cache
+D:\Programiranje\GameReviews\GameReviews\Web\obj\Debug\netcoreapp2.2\Web.AssemblyInfo.cs
+D:\Programiranje\GameReviews\GameReviews\Web\obj\Debug\netcoreapp2.2\Web.csproj.CoreCompileInputs.cache
+D:\Programiranje\GameReviews\GameReviews\Web\obj\Debug\netcoreapp2.2\Web.RazorAssemblyInfo.cache
+D:\Programiranje\GameReviews\GameReviews\Web\obj\Debug\netcoreapp2.2\Web.RazorAssemblyInfo.cs
+D:\Programiranje\GameReviews\GameReviews\Web\obj\Debug\netcoreapp2.2\Web.dll
+D:\Programiranje\GameReviews\GameReviews\Web\obj\Debug\netcoreapp2.2\Web.pdb

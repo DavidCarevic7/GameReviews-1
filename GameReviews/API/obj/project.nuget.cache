@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QjLZ6z2fbM2gOWwEO2y+wDImTfKjRn8QPrVQ4xWqRdKs1ryC60RVIFxbNtVRhhs63nhiQDAtsrpMOSne22DijA==",
+  "dgSpecHash": "H7CHDDrrRx9mT12r4dyG+whnHdIHsf7ClpV+3Ru9/GPjVn0AfOc1WEXGKNKGa0+paNyDhnn7cjpjWdRhIMiQeA==",
   "success": true,
-  "projectFilePath": "F:\\Programiranje\\GameReviews\\GameReviews\\API\\API.csproj",
+  "projectFilePath": "D:\\Programiranje\\GameReviews\\GameReviews\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\David\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\David\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",
