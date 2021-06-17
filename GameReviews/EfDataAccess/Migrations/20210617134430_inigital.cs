@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EfDataAccess.Migrations
 {
-    public partial class initialsetup : Migration
+    public partial class inigital : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -38,6 +38,22 @@ namespace EfDataAccess.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Roles", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Tags",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    CreatedOn = table.Column<DateTime>(nullable: false, defaultValueSql: "GETDATE()"),
+                    ModifiedOn = table.Column<DateTime>(nullable: true),
+                    IsDeleted = table.Column<bool>(nullable: false),
+                    Name = table.Column<string>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Tags", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -128,6 +144,35 @@ namespace EfDataAccess.Migrations
                         onDelete: ReferentialAction.NoAction);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "PostTags",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    CreatedOn = table.Column<DateTime>(nullable: false),
+                    ModifiedOn = table.Column<DateTime>(nullable: true),
+                    IsDeleted = table.Column<bool>(nullable: false),
+                    PostId = table.Column<int>(nullable: true),
+                    TagId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PostTags", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_PostTags_Posts_PostId",
+                        column: x => x.PostId,
+                        principalTable: "Posts",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.NoAction);
+                    table.ForeignKey(
+                        name: "FK_PostTags_Tags_TagId",
+                        column: x => x.TagId,
+                        principalTable: "Tags",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.NoAction);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Commnets_PostId",
                 table: "Commnets",
@@ -150,9 +195,25 @@ namespace EfDataAccess.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_PostTags_PostId",
+                table: "PostTags",
+                column: "PostId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PostTags_TagId",
+                table: "PostTags",
+                column: "TagId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Roles_RoleName",
                 table: "Roles",
                 column: "RoleName",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Tags_Name",
+                table: "Tags",
+                column: "Name",
                 unique: true);
 
             migrationBuilder.CreateIndex(
@@ -173,7 +234,13 @@ namespace EfDataAccess.Migrations
                 name: "Commnets");
 
             migrationBuilder.DropTable(
+                name: "PostTags");
+
+            migrationBuilder.DropTable(
                 name: "Posts");
+
+            migrationBuilder.DropTable(
+                name: "Tags");
 
             migrationBuilder.DropTable(
                 name: "PostImages");

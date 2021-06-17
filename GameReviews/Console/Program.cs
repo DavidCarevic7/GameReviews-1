@@ -34,6 +34,27 @@ namespace Console
 
             context.SaveChanges();
 
+            //tagovi 
+
+            context.Tags.Add(new Tag { 
+                IsDeleted= false,
+                Name = "Tag1",
+                ModifiedOn = null
+            });
+            context.Tags.Add(new Tag
+            {
+                IsDeleted = false,
+                Name = "Tag2",
+                ModifiedOn = null
+
+            });
+            context.Tags.Add(new Tag
+            {
+                IsDeleted = false,
+                Name = "Tag3",
+                ModifiedOn = null
+            });
+
 
             //useri
 
@@ -182,10 +203,47 @@ namespace Console
                 PostId = 2
             });
 
+            context.SaveChanges();
 
+            //post-tag
+            context.PostTags.Add(new PostTag { 
+                IsDeleted = false,
+                ModifiedOn = null,
+                PostId = 1,
+                TagId = 1
+            });
 
+            context.PostTags.Add(new PostTag
+            {
+                IsDeleted = false,
+                ModifiedOn = null,
+                PostId = 1,
+                TagId = 2
+            });
 
+            context.PostTags.Add(new PostTag
+            {
+                IsDeleted = false,
+                ModifiedOn = null,
+                PostId = 1,
+                TagId = 3
+            });
 
+            context.PostTags.Add(new PostTag
+            {
+                IsDeleted = false,
+                ModifiedOn = null,
+                PostId = 2,
+                TagId = 1
+            });
+
+            context.PostTags.Add(new PostTag
+            {
+                IsDeleted = false,
+                ModifiedOn = null,
+                PostId = 2,
+                TagId = 2
+            });
 
             context.SaveChanges();
 

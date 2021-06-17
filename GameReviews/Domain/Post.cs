@@ -21,6 +21,8 @@ namespace Domain
         public PostImage PostImage { get; set; }
 
         public ICollection<Comment> Comments { get; set; }
+
+        public ICollection<PostTag> PostTags { get; set; }
        
     }
 }

@@ -109,6 +109,31 @@ namespace EfDataAccess.Migrations
                     b.ToTable("PostImages");
                 });
 
+            modelBuilder.Entity("Domain.PostTag", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreatedOn");
+
+                    b.Property<bool>("IsDeleted");
+
+                    b.Property<DateTime?>("ModifiedOn");
+
+                    b.Property<int?>("PostId");
+
+                    b.Property<int>("TagId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PostId");
+
+                    b.HasIndex("TagId");
+
+                    b.ToTable("PostTags");
+                });
+
             modelBuilder.Entity("Domain.Role", b =>
                 {
                     b.Property<int>("Id")
@@ -132,6 +157,31 @@ namespace EfDataAccess.Migrations
                         .IsUnique();
 
                     b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("Domain.Tag", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreatedOn")
+                        .ValueGeneratedOnAdd()
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<bool>("IsDeleted");
+
+                    b.Property<DateTime?>("ModifiedOn");
+
+                    b.Property<string>("Name")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.ToTable("Tags");
                 });
 
             modelBuilder.Entity("Domain.User", b =>
@@ -181,12 +231,12 @@ namespace EfDataAccess.Migrations
                     b.HasOne("Domain.Post", "Post")
                         .WithMany("Comments")
                         .HasForeignKey("PostId")
-                        .OnDelete(DeleteBehavior.SetNull);
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("Domain.User", "User")
                         .WithMany("Comments")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.SetNull);
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Domain.Post", b =>
@@ -199,6 +249,18 @@ namespace EfDataAccess.Migrations
                     b.HasOne("Domain.User", "User")
                         .WithMany("Posts")
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Domain.PostTag", b =>
+                {
+                    b.HasOne("Domain.Post", "Post")
+                        .WithMany("PostTags")
+                        .HasForeignKey("PostId");
+
+                    b.HasOne("Domain.Tag", "Tag")
+                        .WithMany("PostTags")
+                        .HasForeignKey("TagId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
