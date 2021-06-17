@@ -58,7 +58,7 @@ namespace API.Controllers
         /// <returns></returns>
         // GET: api/Posts
         [HttpGet]
-        [Authorize]
+        
         public ActionResult<IEnumerable<PostDto>> Get([FromQuery]PostSearch ps)
         {
             try
