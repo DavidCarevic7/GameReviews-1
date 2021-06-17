@@ -1,16 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\GameReviews",
-    "\\GameReviews\\API\\Helpers",
-    "\\GameReviews\\EfDataAccess",
-    "\\GameReviews\\EfDataAccess\\bin",
-    "\\GameReviews\\EfDataAccess\\Configurations",
-    "\\GameReviews\\EfDataAccess\\Migrations",
-    "\\GameReviews\\EfDataAccess\\obj",
-    "\\GameReviews\\Web\\Controllers",
-    "\\GameReviews\\Web\\DTO"
+    ""
   ],
-  "SelectedNode": "\\GameReviews\\GameReviews.sln",
+  "SelectedNode": "\\GameReviews.sln",
   "PreviewInSolutionExplorer": false
 }
